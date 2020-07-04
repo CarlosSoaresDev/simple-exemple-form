@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Form exemple</h2>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://github.com/CarlosSoaresDev">Github</a> </li>
+                <li><a href="https://www.instagram.com/carlossoares_dev/">Instagram</a> </li>
+                <li><a href="https://www.facebook.com/carlinhosalvesm12/">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/carlos-alves-soares-b707a4152/">Linkdin</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container d-flex-jc-between">
+        <div class="card" style="width: 450px;">
+            <form id="frm">
+                <div class="form-group">
+                    <label for="_name">Nome Completo   
+                    <span id="require_name"> - Este campo é requerido</span>
+                </label>
+                    <input type="text" id="_name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="_email">Email
+                     <span id="email_email"> - Email invalido</span></label>
+                    <input type="text" id="_email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="_password">Senha  
+                    <span id="require_password">Este campo é requerido</span>
+                    <span id="min_password"> - Minimo de caracteres é 7</span>
+                </label>
+                    <input type="password" id="_password" name="password">
+                </div>
+                <button class="btn btn-block" type="submit">
+                    <span class="material-icons">save</span>
+                    <span>Cadastrar</span>
+                    <span></span>
+                </button>
+            </form>
+        </div>
+        <div class="card" style="width: 700px;">
+            <table id="table">
+            </table>
+        </div>
+    </section>
+
+    <script src="lib/toast.js"></script>
+    <script src="lib/validators.js"></script>
+    <script src="lib/storage.js"></script>
+    <script src="lib/core.js"></script>
+
+</body>
+
+</html>
